@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+ <html lang="pt-BR">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reconhecimento de Objetos com COCO-SSD</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+  <script src="script.js" defer></script>
+ </head>
+ <body>
+  <div class="container">
+  <h1>Reconhecimento de Objetos</h1>
+  
+  <input type="file" id="imageUpload" accept="image/*">
+  <label for="imageUpload" class="upload-button">Escolher Imagem</label>
+  
+  <div class="image-preview-area">
+  <div class="image-container">
+  <img id="uploadedImage" src="#" alt="Imagem a ser analisada" style="display: none;">
+  <canvas id="detectionCanvas" style="position: absolute; top: 0; left: 0; display: none;"></canvas>
+  </div>
+  </div>
+  
+  <div id="legend"></div>
+  </div>
+ </body>
+ </html>

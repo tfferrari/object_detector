@@ -1,0 +1,96 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #e0f2f7; /* Azul bem claro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px; /* Adiciona um pouco de padding para telas menores */
+  box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+ }
+
+ .container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px;
+  width: 100%; /* Garante que o contêiner ocupe a largura disponível */
+  box-sizing: border-box;
+ }
+
+ h1 {
+  color: #1976d2; /* Azul mais escuro */
+  margin-bottom: 20px;
+ }
+
+ /* Estilizando o input de arquivo como um botão */
+ #imageUpload {
+  display: none; /* Esconde o input original */
+ }
+
+ .upload-button {
+  background-color: #42a5f5; /* Azul intermediário */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px; /* Garante espaço abaixo do botão */
+  transition: background-color 0.3s ease;
+  display: inline-block; /* Permite que o margin-bottom funcione corretamente */
+ }
+
+ .upload-button:hover {
+  background-color: #2196f3; /* Azul um pouco mais escuro ao passar o mouse */
+ }
+
+ .image-preview-area {
+  min-height: 200px; /* Garante uma altura mínima para a área da imagem */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Espaço entre a imagem e a legenda */
+  border: 1px dashed #b3e5fc; /* Borda tracejada para indicar a área de imagem */
+  border-radius: 4px;
+  background-color: #f5f5f5; /* Um fundo claro para a área de preview */
+ }
+
+ .image-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px; /* Limita a largura máxima da imagem dentro da área */
+  /* Remove margin-bottom daqui, pois o image-preview-area já tem */
+ }
+
+ #uploadedImage {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Remove o espaço extra abaixo da imagem */
+  border: 1px solid #b3e5fc; /* Borda azul clara */
+  border-radius: 4px;
+ }
+
+ #detectionCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: auto;
+ }
+
+ #legend {
+  text-align: left;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #bbdefb; /* Azul ainda mais claro */
+  border-radius: 4px;
+  color: #1565c0; /* Outro tom de azul escuro */
+ }
+
+ #legend p {
+  margin: 5px 0;
+ }
